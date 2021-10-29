@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Externo: Fontes --> <link rel="preconnect" href="https://fonts.googleapis.com">
+    <!-- Externo: Fontes --> <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Externo: Fontes --> <link href="https://fonts.googleapis.com/css2?family=Kumar+One&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <title>Riphar - Realize e participe de sorteios online</title>
+</head>
+<body>
+    <header>
+        <nav class="header">
+            <a class="header__logo" href="index.html">
+                <img class="header__icon" src="assets/img/ticket.png" alt="">
+                <span class="header__name">Riphar</span>
+            </a>
+            <div class="header__navigation">
+                <i class="fas fa-bars header__open-menu"></i>
+                <div class="header__navigation-menu">
+                    <div class="header__menu-head">
+                        <a class="header__logo" href="index.html">
+                            <img class="header__icon" src="assets/img/ticket.png" alt="">
+                            <span class="header__name">Riphar</span>
+                        </a>
+                        <i class="fas fa-times header__close-menu"></i>
+                    </div>
+                    <ul class="header__menu-list">
+                        <li class="header__menu-item"><a href="index.html" class="header__menu-link">Início</a></li>
+                        <li class="header__menu-item"><a href="entrar.html" class="header__menu-link active-link">Entrar</a></li>
+                        <li class="header__menu-item"><a href="cadastro.html" class="header__menu-link">Criar conta</a></li>
+                        <li class="header__menu-item"><a href="sortear.html" class="header__menu-link">Novo sorteio</a></li>
+                        <li class="header__menu-item"><a href="sorteios.html" class="header__menu-link">Mais sorteios</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="entrar">
+        <h1 class="entrar__title">Entrar</h1>
+        <form action="post" class="entrar__form">
+            <label for="email" class="entrar__label">Endereço de e-mail</label>
+            <input type="email" class="input entrar__input" placeholder="username@example.com" id="email">
+            <label for="senha" class="entrar__label">Senha</label>
+            <input type="password" class="input entrar__input" placeholder="*********" id="senha">
+            <a href="" class="entrar__nova-senha">Esqueceu sua senha?</a>
+            <button type="button" class="btn entrar__cta">Entrar</button>
+            <button type="button" class="btn entrar__secondary">Criar conta</button>
+        </form>
+    </main>
+
+    <script src="js/menu.js"></script>
+    <script src="js/fake-database.js"></script>
+    <script src="js/filter.js"></script>
+    <!-- Externo: Ícones --> <script src="https://kit.fontawesome.com/e47ec628f8.js" crossorigin="anonymous"></script>
+
+</body>
+</html>

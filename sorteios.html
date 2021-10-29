@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Externo: Fontes --> <link rel="preconnect" href="https://fonts.googleapis.com">
+    <!-- Externo: Fontes --> <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Externo: Fontes --> <link href="https://fonts.googleapis.com/css2?family=Kumar+One&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <title>Riphar - Realize e participe de sorteios online</title>
+</head>
+<body>
+    <header>
+        <nav class="header">
+            <a class="header__logo" href="index.html">
+                <img class="header__icon" src="assets/img/ticket.png" alt="">
+                <span class="header__name">Riphar</span>
+            </a>
+            <div class="header__navigation">
+                <i class="fas fa-bars header__open-menu"></i>
+                <div class="header__navigation-menu">
+                    <div class="header__menu-head">
+                        <a class="header__logo" href="index.html">
+                            <img class="header__icon" src="assets/img/ticket.png" alt="">
+                            <span class="header__name">Riphar</span>
+                        </a>
+                        <i class="fas fa-times header__close-menu"></i>
+                    </div>
+                    <ul class="header__menu-list">
+                        <li class="header__menu-item"><a href="index.html" class="header__menu-link">Início</a></li>
+                        <li class="header__menu-item"><a href="entrar.html" class="header__menu-link">Entrar</a></li>
+                        <li class="header__menu-item"><a href="cadastro.html" class="header__menu-link">Criar conta</a></li>
+                        <li class="header__menu-item"><a href="sortear.html" class="header__menu-link">Novo sorteio</a></li>
+                        <li class="header__menu-item"><a href="sorteios.html" class="header__menu-link active-link">Mais sorteios</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="search">
+        <h2 class="search__title">Sorteios</h2>
+        <p class="search__text">Encontre os melhores sorteios rolando perto de você, e teste já a sua sorte!</p>
+        <div class="search__params">
+            <input type="search" class="search__input" placeholder="Buscar...">
+            <span class="search__filter"><i class="fas fa-filter"></i></span>
+        </div>
+        <section class="search__results results">
+            <ul class="results__list"> <!-- Cards dos sorteios --> </ul>
+        </section>
+        <button class="btn search__btn">Carregar mais</button>
+    </main>
+
+    <footer class="footer">
+        © Riphar - Todos os direitos reservado
+    </footer>
+
+    <script src="js/menu.js"></script>
+    <script src="js/fake-database.js"></script>
+    <script src="js/gerador-cards.js"></script>
+    <!-- Externo: Ícones --> <script src="https://kit.fontawesome.com/e47ec628f8.js" crossorigin="anonymous"></script>
+
+</body>
+</html>
