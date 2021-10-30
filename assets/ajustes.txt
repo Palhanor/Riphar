@@ -1,7 +1,5 @@
 Parte preto translucida do menu bugada
 Criar sistema responsivo (tablet e desktop)
-Organizar os padrões do SASS (presets)
-Criar redirecionamento dos botões
 Sistema de rolagem para cima
 Ajeitar o idioma do código
 Criar novas páginas externas (restaurar senha, termos de privacidade, sorteio)
