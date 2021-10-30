@@ -11,6 +11,14 @@
         align-items: center;
         font-size: 1.6rem;
         text-decoration: none;
+
+        @include medium() {
+            margin-top: -6px;
+        }
+
+        @include large() {
+            margin-top: -10px;
+        }
     }
 
     &__icon {
@@ -29,9 +37,17 @@
         align-items: center;
     }
 
-    //&__open-menu {
-    //    useless
-    //}
+    &__open-menu {
+        margin-top: -5px;
+
+        @include medium() {
+            margin-top: -8px;
+        }
+
+        @include large() {
+            margin-top: -12px;
+        }
+    }
 
     &__navigation-menu {
         list-style: none;

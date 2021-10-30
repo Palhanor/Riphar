@@ -1,5 +1,6 @@
 Parte preto translucida do menu bugada
-Criar sistema responsivo (tablet e desktop)
+Criar sistema responsivo (tablet e desktop) - restante das páginas
+Criar micro interação para desktop (hover nos cards e links)
 Sistema de rolagem para cima
 Ajeitar o idioma do código
 Criar novas páginas externas (restaurar senha, termos de privacidade, sorteio)

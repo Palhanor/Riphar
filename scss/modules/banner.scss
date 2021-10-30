@@ -1,7 +1,7 @@
 .banner {
     background: linear-gradient(295.68deg, $theme-red -11.63%, $theme-orange 62.37%, $theme-yellow 99.32%);
     width: 100%;
-    height: 40vh;
+    min-height: 40vh;
     padding: 6%;
 
     &__title {

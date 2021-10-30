@@ -12,6 +12,39 @@ $white: #FFFFFF;
 $medium-gray: #E4E4E4;
 $darker-medium-gray: #636363;
 
+/// RESPONSIVE
+$small: 576px;
+$medium: 768px;
+$large: 992px;
+$extra-large: 1200px;
+$ultra-large: 1400px;
+
+@mixin small {
+    @media (min-width: $small) { 
+        @content;
+    }
+}
+@mixin medium {
+    @media (min-width: $medium) { 
+        @content;
+    }
+}
+@mixin large {
+    @media (min-width: $large) { 
+        @content;
+    }
+}
+@mixin extra-large {
+    @media (min-width: $extra-large) { 
+        @content;
+    }
+}
+@mixin ultra-large {
+    @media (min-width: $ultra-large) { 
+        @content;
+    }
+}
+
 /// PLACEHOLDERS
 %icons {
     font-size: 2rem;
@@ -35,8 +68,9 @@ $darker-medium-gray: #636363;
 }
 
 %button-primary {
-    padding: 4%;
+    padding: .9rem;
     background-color: $theme-red;
+    max-width: 350px;
     color: $white;
     border: none;
     border-radius: 5px;
@@ -49,7 +83,8 @@ $darker-medium-gray: #636363;
     background-color: $white;
     color: $black;
     border: 1px solid $black;
-    padding: 4%;
+    max-width: 350px;
+    padding: .9rem;
     border-radius: 5px;
     text-transform: uppercase;
     display: block;
@@ -62,29 +97,3 @@ $darker-medium-gray: #636363;
     align-items: flex-start;
 }
 
-/// RESPONSIVE
-@mixin small {
-    @media (min-width: 576px) and (max-width: 767.98px) { 
-        @content;
-    }
-}
-@mixin medium {
-    @media (min-width: 768px) and (max-width: 991.98px) { 
-        @content;
-    }
-}
-@mixin large {
-    @media (min-width: 992px) and (max-width: 1199.98px) { 
-        @content;
-    }
-}
-@mixin extra-large {
-    @media (min-width: 1200px) and (max-width: 1399.98px) { 
-        @content;
-    }
-}
-@mixin ultra-large {
-    @media (min-width: 1400px) { 
-        @content;
-    }
-}

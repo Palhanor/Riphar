@@ -18,6 +18,10 @@
         display: flex;
         justify-content: space-between;
         margin-bottom: 1.5rem;
+
+        @include medium() {
+            margin-bottom: 2.5rem;
+        }
     }
 
     &__input {
@@ -27,6 +31,18 @@
         width: 80%;
         border-radius: 5px;
         color: $dark-gray;
+
+        @include small() {
+            width: 85%;
+        }
+
+        @include medium() {
+            width: 90%;
+        }
+
+        @include large() {
+            width: 92%;
+        }
     }
 
     &__filter {
@@ -45,6 +61,12 @@
             display: flex;
             flex-direction: column;
             margin-bottom: 1rem;
+
+            @include small() {
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: space-between;
+            }
         }
 
         &__list-item {
@@ -54,6 +76,18 @@
             margin-bottom: 1rem;
             background: $white;
             border-radius: 5px;
+
+            @include small() {
+                width: 48%;
+            }
+
+            @include large() {
+                width: 32%;
+            }
+
+            @include extra-large() {
+                width: 24%;
+            }
         }
 
         &__item-link {
@@ -76,12 +110,28 @@
             @extend %item-description;
             font-weight: 500;
             margin-bottom: .5rem;
+
+            @include medium() {
+                font-size: .9rem;
+            }
+
+            @include large() {
+                font-size: .8rem;
+            }
         }
 
         &__item-description-body {
             @extend %item-description;
             color: $darker-medium-gray;
             margin-bottom: .5rem;
+
+            @include medium() {
+                font-size: .9rem;
+            }
+
+            @include large() {
+                font-size: .8rem;
+            }
         }
 
         &__item-title {
