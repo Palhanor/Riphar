@@ -1,9 +1,8 @@
-
 .header {
     padding: 4% 6% 2%;
     width: 100%;
     height: 10vh;
-    background-color: #fefefe;
+    background-color: $white;
     display: flex;
     justify-content: space-between;
 
@@ -21,7 +20,7 @@
     }
 
     &__name {
-        color: orange;
+        color: $theme-orange;
         font-family: 'Kumar One', cursive;
     }
 
@@ -30,11 +29,9 @@
         align-items: center;
     }
 
-    &__open-menu, &__close-menu {
-        font-size: 2rem;
-        font-weight: 900;
-        color: #505050;
-    }
+    //&__open-menu {
+    //    useless
+    //}
 
     &__navigation-menu {
         list-style: none;
@@ -44,7 +41,7 @@
         right: -80vw;
         width: 80vw;
         height: 100%;
-        background-color: #FFF;
+        background-color: $white;
         transition: right 0.3s ease-out;
     }
 
@@ -58,7 +55,7 @@
             right: 80vw;
             height: 100vh;
             width: 20vw;
-            background: rgba(0, 0, 0, .6);
+            background: rgba($black, .6);
         }
     }
 
@@ -68,6 +65,10 @@
         justify-content: space-between;
         padding: 5% 10%;
     }
+
+    //&__close-menu {
+    //    useless
+    //}
 
     &__menu-list {
         list-style: none;
@@ -88,7 +89,7 @@
 
     &__menu-link {
         text-decoration: none;
-        color: black;
+        color: $black;
         text-transform: uppercase;
         font-weight: 500;
         padding: 5% 10%;
@@ -97,7 +98,7 @@
     }
 
     .active-link {
-        color: #FDDA36;
+        color: $theme-yellow;
     }
 
 }

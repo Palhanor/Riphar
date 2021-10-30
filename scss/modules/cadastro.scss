@@ -1,5 +1,5 @@
 .criar-conta {
-    background: #F7F7F7;
+    background: $page-bg;
     padding: 15% 5%;
     height: 90vh;
 
@@ -22,13 +22,7 @@
     //}
 
     &__input {
-        background: #E4E4E4;
-        color: #484848;
-        padding: .8rem 1rem;
         width: 100%;
-        border: none;
-        border-radius: 5px;
-        margin: .5rem 0;
     }
 
     &__termos {
@@ -39,30 +33,16 @@
         font-size: .9rem;
     }
 
-    &__link-termos {
-        color: gray;
-    }
+    //&__link-termos {
+    //    useless
+    //}
 
     &__cta {
-        padding: 4%;
-        background-color: #98252C;
-        color: white;
-        border: none;
-        border-radius: 5px;
-        text-transform: uppercase;
-        display: block;
-        margin: .6rem 0;
+        @extend %button-primary;
     }
 
     &__secondary {
-        padding: 4%;
-        background-color: #FFF;
-        color: black;
-        border: 1px solid black;
-        border-radius: 5px;
-        text-transform: uppercase;
-        display: block;
-        margin: .6rem 0;
+        @extend %button-secondary;
     }
 
 }

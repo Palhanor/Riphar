@@ -1,18 +1,18 @@
 .banner {
-    background: linear-gradient(295.68deg, #98252C -11.63%, #FF990D 62.37%, #FDDA36 99.32%);
+    background: linear-gradient(295.68deg, $theme-red -11.63%, $theme-orange 62.37%, $theme-yellow 99.32%);
     width: 100%;
     height: 40vh;
     padding: 6%;
 
     &__title {
-        color: white;
+        color: $white;
         text-align: center;
         font-weight: 500;
         margin-bottom: 2rem;
     }
 
     &__text {
-        color: #F0F0F0;
+        color: $light-text;
         margin: 0 auto 2rem;
         text-align: center;
         line-height: 1.5;
@@ -20,14 +20,8 @@
     }
 
     &__btn {
-        width: 60%;
-        padding: 4%;
-        background-color: #98252C;
-        color: white;
-        border: none;
-        border-radius: 5px;
-        text-transform: uppercase;
-        display: block;
+        @extend %button-primary;
+        width: 70%;
         margin: 0 auto;
     }
 }

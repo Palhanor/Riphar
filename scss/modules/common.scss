@@ -4,3 +4,21 @@
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
 }
+
+.input {
+    @extend %input-field;
+}
+
+.link {
+    @extend %links;
+}
+
+.icon {
+    @extend %icons;
+}
+
+//botoes - btn, btn-primary, btn-secondary
+//container - container
+//titulos - def-title
+//subtitulos - def-subtitle
+//textos padrao - def-text

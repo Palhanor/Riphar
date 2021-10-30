@@ -1,8 +1,8 @@
 /// sass --watch scss/index.scss:css/index/index.css
 
-//@import 'presets';
+@import 'modules/presets';
 
-//@import 'normalize';
+@import 'modules/normalize';
 
 @import 'modules/common';
 

@@ -1,5 +1,5 @@
 .search {
-    background: #F7F7F7;
+    background: $page-bg;
     padding: 6%;
 
     &__title {
@@ -21,37 +21,38 @@
     }
 
     &__input {
-        background: #E4E4E4;
+        background: $medium-gray;
         padding: .8rem 1rem .8rem 2rem;
         border: none;
         width: 80%;
         border-radius: 5px;
-        color: #484848;
+        color: $dark-gray;
     }
 
     &__filter {
-        background: #E4E4E4;
+        font-size: 1rem;
+        background: $medium-gray;
         padding: .8rem 1rem;
         border-radius: 5px;
-        color: #505050;
     }
 
 
     .results {
-        
+        //nothing
         
         &__list {
             list-style: none;
             display: flex;
             flex-direction: column;
+            margin-bottom: 1rem;
         }
 
         &__list-item {
             width: 100%;
             height: auto;
-            box-shadow: 0 0 5px rgba(0, 0, 0, .2);
+            box-shadow: 0 0 5px rgba($black, .2);
             margin-bottom: 1rem;
-            background: white;
+            background: $white;
             border-radius: 5px;
         }
 
@@ -68,23 +69,19 @@
 
         &__item-description {
             padding: 3% 4%;
-            color: black;
+            color: $black;
         }
 
         &__item-description-head {
+            @extend %item-description;
             font-weight: 500;
             margin-bottom: .5rem;
         }
 
         &__item-description-body {
-            color: #636363;
+            @extend %item-description;
+            color: $darker-medium-gray;
             margin-bottom: .5rem;
-        }
-
-        &__item-description-head, &__item-description-body {
-            display: flex;
-            justify-content: space-between;
-            align-items: flex-start;
         }
 
         &__item-title {
@@ -106,15 +103,9 @@
     }
 
     &__btn {
+        @extend %button-primary;
         width: 60%;
-        padding: 4%;
-        background-color: #98252C;
-        color: white;
-        border: none;
-        border-radius: 5px;
-        text-transform: uppercase;
-        display: block;
-        margin: 1.2rem auto;
+        margin: auto;
     }
 
 }
