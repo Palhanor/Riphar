@@ -1,0 +1,55 @@
+.novo-sorteio {
+    background: #F7F7F7;
+    padding: 15% 5%;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__title {
+        font-weight: 500;
+        text-align: center;
+        font-size: 1.5rem;
+        margin-bottom: 1.5rem;
+    }
+
+    &__subtitle {
+        font-weight: 500;
+        color: darkgray;
+        text-align: center;
+        font-size: 1.2rem;
+        margin-bottom: 1rem;
+    }
+
+    &__text {
+        margin: 1rem 0;
+        font-size: 1.05rem;
+        text-align: center;
+        line-height: 1.2;
+    }
+
+    &__cta {
+        padding: 4%;
+        background-color: #98252C;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        text-transform: uppercase;
+        display: block;
+        margin: .6rem 0;
+        width: 80%;
+    }
+
+
+    &__secondary {
+        padding: 4%;
+        background-color: #FFF;
+        color: black;
+        border: 1px solid black;
+        border-radius: 5px;
+        text-transform: uppercase;
+        display: block;
+        margin: .6rem 0;
+        width: 80%;
+    }
+}

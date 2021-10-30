@@ -1,0 +1,150 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+.header {
+  padding: 4% 6% 2%;
+  width: 100%;
+  height: 10vh;
+  background-color: #fefefe;
+  display: flex;
+  justify-content: space-between;
+}
+.header__logo {
+  display: flex;
+  align-items: center;
+  font-size: 1.6rem;
+  text-decoration: none;
+}
+.header__icon {
+  width: 2.2rem;
+  margin-right: 0.4rem;
+  margin-top: -8px;
+}
+.header__name {
+  color: orange;
+  font-family: "Kumar One", cursive;
+}
+.header__navigation {
+  display: flex;
+  align-items: center;
+}
+.header__open-menu, .header__close-menu {
+  font-size: 2rem;
+  font-weight: 900;
+  color: #505050;
+}
+.header__navigation-menu {
+  list-style: none;
+  z-index: 99;
+  position: fixed;
+  top: 0;
+  right: -80vw;
+  width: 80vw;
+  height: 100%;
+  background-color: #FFF;
+  transition: right 0.3s ease-out;
+}
+.header .active-menu {
+  right: 0;
+}
+.header .active-menu::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 80vw;
+  height: 100vh;
+  width: 20vw;
+  background: rgba(0, 0, 0, 0.6);
+}
+.header__menu-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5% 10%;
+}
+.header__menu-list {
+  list-style: none;
+  font-size: 1em;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.header__menu-item {
+  list-style: none;
+  display: block;
+  width: 100%;
+  text-align: left;
+}
+.header__menu-link {
+  text-decoration: none;
+  color: black;
+  text-transform: uppercase;
+  font-weight: 500;
+  padding: 5% 10%;
+  width: 100%;
+  display: block;
+}
+.header .active-link {
+  color: #FDDA36;
+}
+
+.entrar {
+  background: #F7F7F7;
+  padding: 15% 5%;
+  height: 90vh;
+}
+.entrar__title {
+  font-weight: 500;
+  text-align: center;
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+}
+.entrar__form {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+.entrar__input {
+  background: #E4E4E4;
+  color: #484848;
+  padding: 0.8rem 1rem;
+  width: 100%;
+  border: none;
+  border-radius: 5px;
+  margin: 0.5rem 0;
+}
+.entrar__nova-senha {
+  margin-top: 0.5rem;
+  color: gray;
+  margin-bottom: 2rem;
+  font-size: 0.9rem;
+}
+.entrar__cta {
+  padding: 4%;
+  background-color: #98252C;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  text-transform: uppercase;
+  display: block;
+  margin: 0.6rem 0;
+}
+.entrar__secondary {
+  padding: 4%;
+  background-color: #FFF;
+  color: black;
+  border: 1px solid black;
+  border-radius: 5px;
+  text-transform: uppercase;
+  display: block;
+  margin: 0.6rem 0;
+}
+
+/*# sourceMappingURL=entrar.css.map */

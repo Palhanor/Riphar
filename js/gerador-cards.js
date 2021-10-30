@@ -1,8 +1,9 @@
 var list = document.querySelector(".results__list");
 var moreCards = document.querySelector(".search__btn");
 
+var numCards = 12;
 var cardIndex = 0;
-var cardStop = 12;
+var cardStop = numCards;
 function createCards() {
     for (cardIndex; cardIndex < cardStop; cardIndex++) {
         if (cardIndex < sorteios.length) {
@@ -14,7 +15,7 @@ function createCards() {
             moreCards.style.color = "black";
         }
     }
-    cardStop = cardStop + 12;
+    cardStop = cardStop + numCards;
 }
 
 function newCard(sorteio) {
@@ -34,7 +35,8 @@ function newCard(sorteio) {
     item.classList.add("results__list-item");
     item.appendChild(itemLink);
     itemLink.classList.add("results__item-link");
-    itemLink.href = "#";
+    itemLink.href = sorteio.link;
+    itemLink.target = "_blank";
 
     // Imagem do sorteio
     itemLink.appendChild(itemImg);

@@ -1,0 +1,13 @@
+/// sass --watch scss/sorteios.scss:css/sorteios/sorteios.css
+
+//@import 'presets';
+
+//@import 'normalize';
+
+@import 'modules/common';
+
+@import 'modules/header';
+
+@import 'modules/search';
+
+@import 'modules/footer';

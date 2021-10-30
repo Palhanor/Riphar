@@ -1,0 +1,11 @@
+/// sass --watch scss/entrar.scss:css/entrar/entrar.css
+
+//@import 'presets';
+
+//@import 'normalize';
+
+@import 'modules/common';
+
+@import 'modules/header';
+
+@import 'modules/entrar';

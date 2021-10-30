@@ -1,7 +1,7 @@
+// LOGIN FORM
 var entrar = document.querySelector(".entrar__cta");
 
 entrar.addEventListener("click", validarLogin);
-
 
 function validarLogin() {
     if (document.querySelector("#email").value == users[0].email && document.querySelector("#senha").value == users[0].password) {

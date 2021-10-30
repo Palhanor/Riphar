@@ -1,0 +1,103 @@
+
+.header {
+    padding: 4% 6% 2%;
+    width: 100%;
+    height: 10vh;
+    background-color: #fefefe;
+    display: flex;
+    justify-content: space-between;
+
+    &__logo {
+        display: flex;
+        align-items: center;
+        font-size: 1.6rem;
+        text-decoration: none;
+    }
+
+    &__icon {
+        width: 2.2rem;
+        margin-right: .4rem;
+        margin-top: -8px;
+    }
+
+    &__name {
+        color: orange;
+        font-family: 'Kumar One', cursive;
+    }
+
+    &__navigation {
+        display: flex;
+        align-items: center;
+    }
+
+    &__open-menu, &__close-menu {
+        font-size: 2rem;
+        font-weight: 900;
+        color: #505050;
+    }
+
+    &__navigation-menu {
+        list-style: none;
+        z-index: 99;
+        position: fixed;
+        top: 0;
+        right: -80vw;
+        width: 80vw;
+        height: 100%;
+        background-color: #FFF;
+        transition: right 0.3s ease-out;
+    }
+
+    .active-menu {
+        right: 0;
+
+        &::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            right: 80vw;
+            height: 100vh;
+            width: 20vw;
+            background: rgba(0, 0, 0, .6);
+        }
+    }
+
+    &__menu-head {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 5% 10%;
+    }
+
+    &__menu-list {
+        list-style: none;
+        font-size: 1em;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__menu-item {
+        list-style: none;
+        display: block;
+        width: 100%;
+        text-align: left;
+    }
+
+    &__menu-link {
+        text-decoration: none;
+        color: black;
+        text-transform: uppercase;
+        font-weight: 500;
+        padding: 5% 10%;
+        width: 100%;
+        display: block;
+    }
+
+    .active-link {
+        color: #FDDA36;
+    }
+
+}

@@ -1,0 +1,120 @@
+.search {
+    background: #F7F7F7;
+    padding: 6%;
+
+    &__title {
+        text-align: center;
+        font-weight: 500;
+        margin-bottom: 1.5rem;
+    }
+
+    &__text {
+        margin-bottom: 1.5rem;
+        text-align: center;
+        line-height: 1.2;
+    }
+
+    &__params {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 1.5rem;
+    }
+
+    &__input {
+        background: #E4E4E4;
+        padding: .8rem 1rem .8rem 2rem;
+        border: none;
+        width: 80%;
+        border-radius: 5px;
+        color: #484848;
+    }
+
+    &__filter {
+        background: #E4E4E4;
+        padding: .8rem 1rem;
+        border-radius: 5px;
+        color: #505050;
+    }
+
+
+    .results {
+        
+        
+        &__list {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+        }
+
+        &__list-item {
+            width: 100%;
+            height: auto;
+            box-shadow: 0 0 5px rgba(0, 0, 0, .2);
+            margin-bottom: 1rem;
+            background: white;
+            border-radius: 5px;
+        }
+
+        &__item-link {
+            text-decoration: none;
+        }
+
+        &__item-image {
+            width: 100%;
+            height: 10rem;
+            border-radius: 5px 5px 0 0;
+            object-fit: cover;
+        }
+
+        &__item-description {
+            padding: 3% 4%;
+            color: black;
+        }
+
+        &__item-description-head {
+            font-weight: 500;
+            margin-bottom: .5rem;
+        }
+
+        &__item-description-body {
+            color: #636363;
+            margin-bottom: .5rem;
+        }
+
+        &__item-description-head, &__item-description-body {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+        }
+
+        &__item-title {
+            max-width: 80%;
+        }
+
+        
+        //&__item-price {
+        //    useless
+        //}
+
+        //&__item-author {
+        //    useless
+        //}
+
+        //&__item-expiration {
+        //    useless
+        //}
+    }
+
+    &__btn {
+        width: 60%;
+        padding: 4%;
+        background-color: #98252C;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        text-transform: uppercase;
+        display: block;
+        margin: 1.2rem auto;
+    }
+
+}
