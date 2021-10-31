@@ -1,7 +1,12 @@
-.header__close-menu, .header__open-menu, .icon {
+.icon {
   font-size: 2rem;
   font-weight: 900;
   color: #505050;
+}
+@media (min-width: 992px) {
+  .icon {
+    cursor: pointer;
+  }
 }
 
 .link {
@@ -20,8 +25,9 @@
 }
 
 .entrar__cta {
-  padding: 4%;
+  padding: 0.9rem;
   background-color: #98252C;
+  max-width: 350px;
   color: #FFFFFF;
   border: none;
   border-radius: 5px;
@@ -34,7 +40,8 @@
   background-color: #FFFFFF;
   color: #000000;
   border: 1px solid #000000;
-  padding: 4%;
+  max-width: 350px;
+  padding: 0.9rem;
   border-radius: 5px;
   text-transform: uppercase;
   display: block;
@@ -77,7 +84,7 @@ main {
  */
 h1 {
   font-size: 2em;
-  margin: 0.67em 0;
+  margin: 0;
 }
 
 /* Grouping content
@@ -388,18 +395,34 @@ template {
 }
 
 .header {
-  padding: 4% 6% 2%;
+  padding: 4% 6%;
   width: 100%;
   height: 10vh;
   background-color: #FFFFFF;
   display: flex;
   justify-content: space-between;
 }
+@media (min-width: 576px) {
+  .header {
+    height: 12vh;
+  }
+}
+@media (min-width: 992px) {
+  .header {
+    height: 8vh;
+  }
+}
 .header__logo {
   display: flex;
   align-items: center;
   font-size: 1.6rem;
   text-decoration: none;
+  margin-top: 0.4rem;
+}
+@media (min-width: 768px) {
+  .header__logo {
+    margin-top: 0.2rem;
+  }
 }
 .header__icon {
   width: 2.2rem;
@@ -414,6 +437,22 @@ template {
   display: flex;
   align-items: center;
 }
+@media (min-width: 768px) {
+  .header__navigation {
+    width: 70%;
+    height: auto;
+  }
+}
+@media (min-width: 992px) {
+  .header__navigation {
+    width: 60%;
+  }
+}
+@media (min-width: 768px) {
+  .header__open-menu {
+    display: none !important;
+  }
+}
 .header__navigation-menu {
   list-style: none;
   z-index: 99;
@@ -424,6 +463,22 @@ template {
   height: 100%;
   background-color: #FFFFFF;
   transition: right 0.3s ease-out;
+}
+@media (min-width: 576px) {
+  .header__navigation-menu {
+    right: -70vw;
+    width: 70vw;
+  }
+}
+@media (min-width: 768px) {
+  .header__navigation-menu {
+    position: static;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    height: auto;
+    width: 100%;
+  }
 }
 .header .active-menu {
   right: 0;
@@ -437,11 +492,27 @@ template {
   width: 20vw;
   background: rgba(0, 0, 0, 0.6);
 }
+@media (min-width: 576px) {
+  .header .active-menu::before {
+    right: 70vw;
+    width: 30vw;
+  }
+}
+@media (min-width: 768px) {
+  .header .active-menu::before {
+    display: none;
+  }
+}
 .header__menu-head {
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 5% 10%;
+}
+@media (min-width: 768px) {
+  .header__menu-head {
+    display: none;
+  }
 }
 .header__menu-list {
   list-style: none;
@@ -452,20 +523,44 @@ template {
   align-items: center;
   justify-content: center;
 }
+@media (min-width: 768px) {
+  .header__menu-list {
+    flex-flow: row;
+    width: 100%;
+  }
+}
 .header__menu-item {
   list-style: none;
   display: block;
   width: 100%;
   text-align: left;
 }
+@media (min-width: 768px) {
+  .header__menu-item {
+    font-size: 0.9rem;
+  }
+}
+@media (min-width: 992px) {
+  .header__menu-item {
+    font-size: 1rem;
+  }
+}
 .header__menu-link {
   text-decoration: none;
   color: #000000;
-  text-transform: uppercase;
   font-weight: 500;
   padding: 5% 10%;
   width: 100%;
   display: block;
+}
+@media (min-width: 768px) {
+  .header__menu-link {
+    text-align: center;
+    padding: 10% 3%;
+  }
+  .header__menu-link:hover {
+    border-bottom: 2px solid #FDDA36;
+  }
 }
 .header .active-link {
   color: #FDDA36;
@@ -473,8 +568,18 @@ template {
 
 .entrar {
   background: #F7F7F7;
-  padding: 15% 5%;
-  height: 90vh;
+  padding: 15% 6%;
+  min-height: 90vh;
+}
+@media (min-width: 576px) {
+  .entrar {
+    padding: 8% 5%;
+  }
+}
+@media (min-width: 768px) {
+  .entrar {
+    padding: 5%;
+  }
 }
 .entrar__title {
   font-weight: 500;
@@ -492,6 +597,30 @@ template {
   margin-top: 0.5rem;
   margin-bottom: 2rem;
   font-size: 0.9rem;
+}
+.footer {
+  background: #2B2A33;
+  color: #FFFFFF;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 0.9rem;
+  height: 10vh;
+}
+
+.special-footer {
+  display: none;
+}
+@media (min-width: 768px) {
+  .special-footer {
+    background: #2B2A33;
+    color: #FFFFFF;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 0.9rem;
+    height: 10vh;
+  }
 }
 
 /*# sourceMappingURL=entrar.css.map */

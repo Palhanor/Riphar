@@ -1,7 +1,15 @@
 .entrar {
     background: $page-bg;
-    padding: 15% 5%;
-    height: 90vh;
+    padding: 15% 6%;
+    min-height: 90vh;
+
+    @include small() {
+        padding: 8% 5%;
+    }
+
+    @include medium() {
+        padding: 5%;
+    }
 
     &__title {
         font-weight: 500;

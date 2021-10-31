@@ -2,6 +2,10 @@
     background: $page-bg;
     padding: 6%;
 
+    @include large() {
+        padding-top: 3%;
+    }
+
     &__title {
         text-align: center;
         font-weight: 500;
@@ -50,6 +54,10 @@
         background: $medium-gray;
         padding: .8rem 1rem;
         border-radius: 5px;
+
+        @include large() {
+            cursor: pointer;
+        }
     }
 
 

@@ -50,6 +50,10 @@ $ultra-large: 1400px;
     font-size: 2rem;
     font-weight: 900;
     color: $dark-gray;
+
+    @include large() {
+        cursor: pointer;
+    }
 }
 
 %links {
