@@ -539,7 +539,7 @@ template {
     font-size: 1rem;
   }
 }
-.header__menu-link {
+.header__menu-link, .header__menu-link--entrar {
   text-decoration: none;
   color: #000000;
   font-weight: 500;
@@ -548,12 +548,25 @@ template {
   display: block;
 }
 @media (min-width: 768px) {
-  .header__menu-link {
+  .header__menu-link, .header__menu-link--entrar {
     text-align: center;
     padding: 10% 3%;
   }
-  .header__menu-link:hover {
+  .header__menu-link:hover, .header__menu-link--entrar:hover {
     border-bottom: 2px solid #FDDA36;
+  }
+}
+@media (min-width: 768px) {
+  .header__menu-link--entrar {
+    margin: 0 1rem 0 2rem;
+    background-color: rgba(253, 218, 54, 0.6);
+    padding: 8%;
+    width: 6rem;
+    border-radius: 5px;
+  }
+  .header__menu-link--entrar:hover {
+    border-bottom: none;
+    background-color: #FDDA36;
   }
 }
 .header .active-link {
@@ -716,6 +729,21 @@ template {
   align-items: center;
   font-size: 0.9rem;
   height: 10vh;
+}
+
+.special-footer {
+  display: none;
+}
+@media (min-width: 768px) {
+  .special-footer {
+    background: #2B2A33;
+    color: #FFFFFF;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 0.9rem;
+    height: 10vh;
+  }
 }
 
 /*# sourceMappingURL=sorteios.css.map */

@@ -22,6 +22,7 @@
     &__btn {
         @extend %button-primary;
         width: 70%;
+        max-width: 360px;
         margin: 0 auto;
     }
 }

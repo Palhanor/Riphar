@@ -1,17 +1,14 @@
 .header {
     padding: 4% 6%;
     width: 100%;
-    height: 10vh;
+    height: 12vh;
     background-color: $white;
     display: flex;
     justify-content: space-between;
 
-    @include small() {
-        height: 12vh;
-    }
-
     @include large() {
-        height: 8vh;
+        height: 10vh;
+        padding: 3.4% 6%;
     }
 
     &__logo {
@@ -23,6 +20,7 @@
 
         @include medium() {
             margin-top: .2rem;
+            margin-right: 3rem;
         }
     }
 
@@ -44,10 +42,6 @@
         @include medium() {
             width: 70%;
             height: auto;
-        }
-
-        @include large() {
-            width: 60%;
         }
     }
 
@@ -79,8 +73,12 @@
             display: flex;
             align-items: center;
             justify-content: flex-end;
-            height: auto;
+            background: transparent;
             width: 100%;
+        }
+
+        @include large() {
+            width: 70vw;
         }
 
     }
@@ -123,6 +121,69 @@
     //    useless
     //}
 
+    &__search {
+
+        @include medium() {
+            width: 80%;
+            display: flex;
+            justify-content: flex-end;
+        }
+
+        @include large() {
+            width: 90%;
+        }
+    }
+
+    &__search-icon {
+        display: none !important;
+        font-size: 1.4rem;
+
+        @include medium() {
+            display: block !important;
+            width: 1.4rem;
+        }
+    }
+
+    &__search-icon-unnactive {
+        display: none !important;
+    }
+
+    &__search-input {
+        width: 100%;
+        padding: 1.2rem 10%;
+        border: none;
+        outline: none;
+        transition: .2s ease;
+        border-bottom: 1px solid $medium-gray;
+
+        &:focus {
+            background: $light-text;
+        }
+
+        @include medium() {
+            display: none;
+            padding: .6rem 1.2rem;
+            border-bottom: 2px solid black;
+            border-radius: 5px 5px 0 0;
+
+            &:focus {
+                border-bottom-color: $theme-yellow;
+                background: $white;
+                animation: inputin 1s;
+            }
+        }
+    }
+
+    @keyframes inputin {
+        0% {width: 0;}
+        100% {width: 100%;}
+    }
+
+    @keyframes inputout {
+        0% {width: 100%;}
+        100% {width: 0;}
+    }
+
     &__menu-list {
         list-style: none;
         font-size: 1em;
@@ -134,7 +195,13 @@
 
         @include medium() {
             flex-flow: row;
-            width: 100%;
+            width: 25rem;
+            margin-left: 1.8rem;
+            justify-content: space-between;
+        }
+
+        @include large() {
+            margin-left: 2.6rem;
         }
     }
 
@@ -145,7 +212,14 @@
         text-align: left;
 
         @include medium() {
+            display: flex;
+            justify-content: flex-start;
+            width: 48%;
             font-size: .9rem;
+
+            &:first-child {
+                display: none;
+            }
         }
 
         @include large() {
@@ -157,7 +231,6 @@
     &__menu-link {
         text-decoration: none;
         color: $black;
-        //text-transform: uppercase;
         font-weight: 500;
         padding: 5% 10%;
         width: 100%;
@@ -173,8 +246,33 @@
         }
     }
 
+    &__menu-link--entrar {
+        @extend .header__menu-link;
+
+        @include medium() {
+            background-color: rgba($theme-yellow, .6);
+            border-radius: 5px;
+    
+            &:hover {
+                border-bottom: none;
+                background-color: $theme-yellow;
+            }
+        }
+    }
+
     .active-link {
         color: $theme-yellow;
+    }
+
+    .active-entrar {
+        color: $theme-yellow;
+
+        @include medium() {
+            background-color: white;
+            border: 2px solid $theme-yellow;
+            padding: 8%;
+            border-radius: 5px;
+        }
     }
 
 }

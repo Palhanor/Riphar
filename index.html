@@ -28,12 +28,14 @@
                         </a>
                         <i class="fas fa-times icon header__close-menu"></i>
                     </div>
+                    <div class="header__search">
+                        <i class="fas fa-search icon header__search-icon"></i>
+                        <input type="search" name="search" id="search" placeholder="Buscar..." class="header__search-input">
+                    </div>
                     <ul class="header__menu-list">
                         <li class="header__menu-item"><a href="index.html" class="header__menu-link active-link">Início</a></li>
-                        <li class="header__menu-item"><a href="entrar.html" class="header__menu-link">Entrar</a></li>
+                        <li class="header__menu-item"><a href="entrar.html" class="header__menu-link--entrar">Entrar</a></li>
                         <li class="header__menu-item"><a href="cadastro.html" class="header__menu-link">Cadastre-se</a></li>
-                        <li class="header__menu-item"><a href="sortear.html" class="header__menu-link">Novo sorteio</a></li>
-                        <li class="header__menu-item"><a href="sorteios.html" class="header__menu-link">Mais sorteios</a></li>
                     </ul>
                 </div>
             </div>
@@ -43,16 +45,12 @@
     <main class="banner">
         <h1 class="banner__title">A sorte ao seu favor</h1>
         <p class="banner__text">Realize e participe de sorteios com toda a comodidade e transperência que você merece!</p>
-        <button class="banner__btn" onclick="window.location.replace('sortear.html');">Sortear</button>
+        <button class="banner__btn" onclick="alert('Não existe mais essa página');">Sortear</button>
     </main>
 
     <section class="search">
         <h2 class="search__title">Principais sorteios</h2>
         <p class="search__text">Encontre os melhores sorteios rolando perto de você, e teste já a sua sorte!</p>
-        <div class="search__params">
-            <input type="search" class="search__input" placeholder="Buscar...">
-            <i class="fas fa-filter icon search__filter"></i>
-        </div>
         <section class="search__results results">
             <ul class="results__list"> <!-- Cards dos sorteios --> </ul>
         </section>

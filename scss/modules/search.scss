@@ -13,53 +13,10 @@
     }
 
     &__text {
-        margin-bottom: 1.5rem;
+        margin-bottom: 2.5rem;
         text-align: center;
         line-height: 1.2;
     }
-
-    &__params {
-        display: flex;
-        justify-content: space-between;
-        margin-bottom: 1.5rem;
-
-        @include medium() {
-            margin-bottom: 2.5rem;
-        }
-    }
-
-    &__input {
-        background: $medium-gray;
-        padding: .8rem 1rem .8rem 2rem;
-        border: none;
-        width: 80%;
-        border-radius: 5px;
-        color: $dark-gray;
-
-        @include small() {
-            width: 85%;
-        }
-
-        @include medium() {
-            width: 90%;
-        }
-
-        @include large() {
-            width: 92%;
-        }
-    }
-
-    &__filter {
-        font-size: 1rem;
-        background: $medium-gray;
-        padding: .8rem 1rem;
-        border-radius: 5px;
-
-        @include large() {
-            cursor: pointer;
-        }
-    }
-
 
     .results {
         //nothing
@@ -162,7 +119,8 @@
 
     &__btn {
         @extend %button-primary;
-        width: 60%;
+        width: 70%;
+        max-width: 360px;
         margin: auto;
     }
 

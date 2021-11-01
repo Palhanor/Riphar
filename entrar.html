@@ -28,12 +28,14 @@
                         </a>
                         <i class="fas fa-times icon header__close-menu"></i>
                     </div>
+                    <div class="header__search">
+                        <i class="fas fa-search icon header__search-icon"></i>
+                        <input type="search" name="search" id="search" placeholder="Buscar..." class="header__search-input">
+                    </div>
                     <ul class="header__menu-list">
                         <li class="header__menu-item"><a href="index.html" class="header__menu-link">Início</a></li>
-                        <li class="header__menu-item"><a href="entrar.html" class="header__menu-link active-link">Entrar</a></li>
-                        <li class="header__menu-item"><a href="cadastro.html" class="header__menu-link">Criar conta</a></li>
-                        <li class="header__menu-item"><a href="sortear.html" class="header__menu-link">Novo sorteio</a></li>
-                        <li class="header__menu-item"><a href="sorteios.html" class="header__menu-link">Mais sorteios</a></li>
+                        <li class="header__menu-item"><a href="entrar.html" class="header__menu-link--entrar active-entrar">Entrar</a></li>
+                        <li class="header__menu-item"><a href="cadastro.html" class="header__menu-link">Cadastre-se</a></li>
                     </ul>
                 </div>
             </div>
@@ -41,16 +43,19 @@
     </header>
 
     <main class="entrar">
-        <h1 class="entrar__title">Entrar</h1>
-        <form action="post" class="entrar__form">
-            <label for="email" class="entrar__label">Endereço de e-mail</label>
-            <input type="email" class="input entrar__input" placeholder="username@example.com" id="email">
-            <label for="senha" class="entrar__label">Senha</label>
-            <input type="password" class="input entrar__input" placeholder="*********" id="senha">
-            <a href="" class="link entrar__nova-senha">Esqueceu sua senha?</a>
-            <button type="button" class="entrar__cta">Entrar</button>
-            <button type="button" class="entrar__secondary" onclick="window.location.replace('cadastro.html');">Criar conta</button>
-        </form>
+        <section class="entrar__container">
+            <h1 class="entrar__title">Entrar</h1>
+            <form action="post" class="entrar__form">
+                <label for="email" class="entrar__label">Endereço de e-mail</label>
+                <input type="email" class="input entrar__input" placeholder="username@example.com" id="email">
+                <label for="senha" class="entrar__label">Senha</label>
+                <input type="password" class="input entrar__input" placeholder="*********" id="senha">
+                <a href="" class="link entrar__nova-senha">Esqueceu sua senha?</a>
+                <button type="button" class="entrar__cta">Entrar</button>
+                <span class="entrar__cadastro">Ainda não possui uma conta? <a href="cadastro.html" class="entrar__cadastro-link link">Cadastre-se</a></span>
+                <button type="button" class="entrar__secondary" onclick="window.location.replace('cadastro.html');">Criar conta</button>
+            </form>
+        </section>
     </main>
 
     <footer class="special-footer">

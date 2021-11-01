@@ -28,12 +28,14 @@
                         </a>
                         <i class="fas fa-times icon header__close-menu"></i>
                     </div>
+                    <div class="header__search">
+                        <i class="fas fa-search icon header__search-icon"></i>
+                        <input type="search" name="search" id="search" placeholder="Buscar sorteio..." class="header__search-input">
+                    </div>
                     <ul class="header__menu-list">
                         <li class="header__menu-item"><a href="index.html" class="header__menu-link">Início</a></li>
-                        <li class="header__menu-item"><a href="entrar.html" class="header__menu-link">Entrar</a></li>
-                        <li class="header__menu-item"><a href="cadastro.html" class="header__menu-link active-link">Criar conta</a></li>
-                        <li class="header__menu-item"><a href="sortear.html" class="header__menu-link">Novo sorteio</a></li>
-                        <li class="header__menu-item"><a href="sorteios.html" class="header__menu-link">Mais sorteios</a></li>
+                        <li class="header__menu-item"><a href="entrar.html" class="header__menu-link--entrar">Entrar</a></li>
+                        <li class="header__menu-item"><a href="cadastro.html" class="header__menu-link active-link">Cadastre-se</a></li>
                     </ul>
                 </div>
             </div>
@@ -41,24 +43,27 @@
     </header>
 
     <main class="criar-conta">
-        <h1 class="criar-conta__title">Criar conta</h1>
-        <form action="post" class="criar-conta__form">
-            <label for="nome" class="criar-conta__label">Nome completo</label>
-            <input type="text" class="input criar-conta__input" placeholder="Ada Lovelace" name="nome" id="nome">
-            <label for="email" class="criar-conta__label">Endereço de e-mail</label>
-            <input type="email" class="input criar-conta__input" placeholder="username@example.com" name="email" id="email">
-            <label for="senha" class="criar-conta__label">Senha</label>
-            <input type="password" class="input criar-conta__input" placeholder="*********" name="senha" id="senha">
-            <div class="criar-conta__termos">
-                <input type="checkbox" name="termos" id="termos" class="checkbox criar-conta__checkbox">
-                <label for="termos" class="criar-conta__label">
-                    Li e concordo com os 
-                    <a href="" class="link criar-conta__link-termos">Termos de uso</a>
-                </label>
-            </div>
-            <button type="button" class="criar-conta__cta">Criar conta</button>
-            <button type="button" class="criar-conta__secondary" onclick="window.location.replace('entrar.html');">Entrar</button>
-        </form>
+        <section class="criar-conta__container">
+            <h1 class="criar-conta__title">Criar conta</h1>
+            <form action="post" class="criar-conta__form">
+                <label for="nome" class="criar-conta__label">Nome completo</label>
+                <input type="text" class="input criar-conta__input" placeholder="Ada Lovelace" name="nome" id="nome">
+                <label for="email" class="criar-conta__label">Endereço de e-mail</label>
+                <input type="email" class="input criar-conta__input" placeholder="username@example.com" name="email" id="email">
+                <label for="senha" class="criar-conta__label">Senha</label>
+                <input type="password" class="input criar-conta__input" placeholder="*********" name="senha" id="senha">
+                <div class="criar-conta__termos">
+                    <input type="checkbox" name="termos" id="termos" class="checkbox criar-conta__checkbox">
+                    <label for="termos" class="criar-conta__label">
+                        Li e concordo com os 
+                        <a href="" class="link criar-conta__link-termos">Termos de uso</a>
+                    </label>
+                </div>
+                <button type="button" class="criar-conta__cta">Criar conta</button>
+                <span class="criar-conta__entrar">Já possui uma conta? <a href="entrar.html" class="criar-conta__entrar-link link">Entrar</a></span>
+                <button type="button" class="criar-conta__secondary" onclick="window.location.replace('entrar.html');">Entrar</button>
+            </form>
+        </section>
     </main>
 
     <footer class="special-footer">
