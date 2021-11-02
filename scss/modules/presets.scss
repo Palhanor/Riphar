@@ -69,6 +69,11 @@ $ultra-large: 1400px;
     border-radius: 5px;
     margin: .5rem 0;
     display: block;
+    outline: none;
+    
+    &:focus {
+        outline: solid 2px $black;
+    }
 }
 
 %button-primary {

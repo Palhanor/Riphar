@@ -22,6 +22,10 @@
   border-radius: 5px;
   margin: 0.5rem 0;
   display: block;
+  outline: none;
+}
+.input:focus {
+  outline: solid 2px #000000;
 }
 
 .entrar__cta {
@@ -542,6 +546,7 @@ template {
   .header__search-icon {
     display: block !important;
     width: 1.4rem;
+    cursor: pointer;
   }
 }
 .header__search-icon-unnactive {
@@ -619,7 +624,7 @@ template {
   .header__menu-item {
     display: flex;
     justify-content: flex-start;
-    width: 48%;
+    width: 45%;
     font-size: 0.9rem;
   }
   .header__menu-item:first-child {
@@ -674,9 +679,9 @@ template {
 }
 
 .entrar {
-  background: #F7F7F7;
+  background: radial-gradient(circle at 18.7% 37.8%, #fafafa 0%, rgba(225, 234, 238, 0.4) 90%);
   padding: 15% 6%;
-  min-height: 90vh;
+  min-height: 88vh;
 }
 @media (min-width: 576px) {
   .entrar {
@@ -686,6 +691,12 @@ template {
 @media (min-width: 768px) {
   .entrar {
     padding: 5%;
+    min-height: 78vh;
+  }
+}
+@media (min-width: 992px) {
+  .entrar {
+    min-height: 80vh;
   }
 }
 @media (min-width: 768px) {
@@ -694,7 +705,7 @@ template {
     max-width: 460px;
     padding: 4% 0;
     border-radius: 10px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 0px 8px;
     margin: 0 auto;
   }
 }

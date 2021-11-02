@@ -532,6 +532,7 @@ template {
   .header__search-icon {
     display: block !important;
     width: 1.4rem;
+    cursor: pointer;
   }
 }
 .header__search-icon-unnactive {
@@ -609,7 +610,7 @@ template {
   .header__menu-item {
     display: flex;
     justify-content: flex-start;
-    width: 48%;
+    width: 45%;
     font-size: 0.9rem;
   }
   .header__menu-item:first-child {
@@ -664,18 +665,30 @@ template {
 }
 
 .banner {
-  background: linear-gradient(295.68deg, #98252C -11.63%, #FF990D 62.37%, #FDDA36 99.32%);
+  background: radial-gradient(circle at -4% -12.9%, #1e2130 0.3%, #4a626e 90.2%);
   width: 100%;
-  min-height: 40vh;
-  padding: 6%;
+}
+@media (min-width: 768px) {
+  .banner {
+    background: linear-gradient(217deg, rgba(255, 0, 0, 0.8), rgba(255, 0, 0, 0) 70.71%), linear-gradient(127deg, rgba(0, 255, 0, 0.8), rgba(0, 255, 0, 0) 70.71%), linear-gradient(336deg, rgba(0, 0, 255, 0.8), rgba(0, 0, 255, 0) 70.71%);
+  }
+}
+.banner__mask {
+  background: rgba(0, 0, 0, 0.25);
+  padding: 8% 6%;
 }
 .banner__title {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 2.3rem;
   color: #FFFFFF;
   text-align: center;
   font-weight: 500;
   margin-bottom: 2rem;
 }
 .banner__text {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 1.1rem;
+  font-weight: 300;
   color: #F0F0F0;
   margin: 0 auto 2rem;
   text-align: center;
@@ -683,6 +696,7 @@ template {
   width: 80%;
 }
 .banner__btn {
+  font-family: "Ubuntu", sans-serif;
   width: 70%;
   max-width: 360px;
   margin: 0 auto;

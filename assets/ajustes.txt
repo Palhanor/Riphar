@@ -1,6 +1,6 @@
-Ajeitar bug do input sumindo na responsividade
+Ajeitar bug do input sumindo na responsividade (poderia ser criado quando clicasse no icone)
 Adicionar um sistema de fechar busca
-Decidir o que vai ter no banner
+Decidir o que vai ter no banner - animação legal
 Parte preto translucida do menu bugada
 Criar micro interação para desktop (hover nos cards e links)
 Sistema de rolagem para cima

@@ -22,7 +22,7 @@ searchIcon.addEventListener("click", function() {
 })
 
 searchInput.addEventListener("focusout", function() {
-    if (window.innerWidth > 756) {
+    if (window.innerWidth > 768) {
         searchInput.style.display = "none";
         searchIcon.classList.remove("header__search-icon-unnactive");
         searchIcon.classList.add("header__search-icon");
