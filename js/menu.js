@@ -15,7 +15,9 @@ var searchIcon = document.querySelector(".header__search-icon");
 var searchInput = document.querySelector(".header__search-input");
 
 searchIcon.addEventListener("click", function() {
-    searchInput.style.display = "block";
+    //searchInput.style.display = "block";
+    searchInput.classList.remove("none");
+    searchInput.classList.add("block");
     searchIcon.classList.remove("header__search-icon");
     searchIcon.classList.add("header__search-icon-unnactive");
     searchInput.focus();
@@ -23,7 +25,9 @@ searchIcon.addEventListener("click", function() {
 
 searchInput.addEventListener("focusout", function() {
     if (window.innerWidth > 768) {
-        searchInput.style.display = "none";
+        //searchInput.style.display = "none";
+        searchInput.classList.remove("block");
+        searchInput.classList.add("none");
         searchIcon.classList.remove("header__search-icon-unnactive");
         searchIcon.classList.add("header__search-icon");
     }

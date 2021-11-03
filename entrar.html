@@ -28,11 +28,11 @@
                         </a>
                         <i class="fas fa-times icon header__close-menu"></i>
                     </div>
-                    <div class="header__search">
-                        <i class="fas fa-search icon header__search-icon"></i>
+                    <div class="header__search no-search">
+                        <i class="fas fa-search icon header__search-icon no-search"></i>
                         <input type="search" name="search" id="search" placeholder="Buscar..." class="header__search-input">
                     </div>
-                    <ul class="header__menu-list">
+                    <ul class="header__menu-list-no-search">
                         <li class="header__menu-item"><a href="index.html" class="header__menu-link">Início</a></li>
                         <li class="header__menu-item"><a href="entrar.html" class="header__menu-link--entrar active-entrar">Entrar</a></li>
                         <li class="header__menu-item"><a href="cadastro.html" class="header__menu-link">Cadastre-se</a></li>
@@ -50,7 +50,7 @@
                 <input type="email" class="input entrar__input" placeholder="username@example.com" id="email">
                 <label for="senha" class="entrar__label">Senha</label>
                 <input type="password" class="input entrar__input" placeholder="*********" id="senha">
-                <a href="" class="link entrar__nova-senha">Esqueceu sua senha?</a>
+                <a href="nova-senha.html" class="link entrar__nova-senha">Esqueceu sua senha?</a>
                 <button type="button" class="entrar__cta">Entrar</button>
                 <span class="entrar__cadastro">Ainda não possui uma conta? <a href="cadastro.html" class="entrar__cadastro-link link">Cadastre-se</a></span>
                 <button type="button" class="entrar__secondary" onclick="window.location.replace('cadastro.html');">Criar conta</button>
@@ -65,6 +65,7 @@
     <script src="js/menu.js"></script>
     <script src="js/fake-database.js"></script>
     <script src="js/forms.js"></script>
+    <script src="js/scroll.js"></script>
     <!-- Externo -->
     <script src="https://kit.fontawesome.com/e47ec628f8.js" crossorigin="anonymous"></script>
 

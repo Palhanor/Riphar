@@ -22,6 +22,10 @@
   border-radius: 5px;
   margin: 0.5rem 0;
   display: block;
+  outline: none;
+}
+.input:focus {
+  outline: solid 2px #000000;
 }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
@@ -373,15 +377,31 @@ template {
 .header {
   padding: 4% 6%;
   width: 100%;
-  height: 14vh;
-  background-color: #FFFFFF;
+  height: 12vh;
+  background: transparent;
   display: flex;
   justify-content: space-between;
+  position: fixed;
+  top: 0;
+  left: 0;
+  transition: 0.25s ease;
+}
+@media (min-width: 768px) {
+  .header {
+    background: rgba(255, 255, 255, 0.6);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+  }
 }
 @media (min-width: 992px) {
   .header {
     height: 10vh;
+    padding: 3.4% 6%;
   }
+}
+.header-white {
+  background: #FFFFFF !important;
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
 }
 .header__logo {
   display: flex;
@@ -411,9 +431,12 @@ template {
 }
 @media (min-width: 768px) {
   .header__navigation {
-    width: 50rem;
+    width: 70%;
     height: auto;
   }
+}
+.header__open-menu {
+  color: #FDDA36;
 }
 @media (min-width: 768px) {
   .header__open-menu {
@@ -500,12 +523,13 @@ template {
 }
 .header__search-icon {
   display: none !important;
-  font-size: 1.5rem;
+  font-size: 1.4rem;
 }
 @media (min-width: 768px) {
   .header__search-icon {
     display: block !important;
-    width: 1.5rem;
+    width: 1.4rem;
+    cursor: pointer;
   }
 }
 .header__search-icon-unnactive {
@@ -517,6 +541,7 @@ template {
   border: none;
   outline: none;
   transition: 0.2s ease;
+  border-bottom: 1px solid #E4E4E4;
 }
 .header__search-input:focus {
   background: #F0F0F0;
@@ -525,13 +550,25 @@ template {
   .header__search-input {
     display: none;
     padding: 0.6rem 1.2rem;
-    border-bottom: 2px solid black;
-    border-radius: 5px 5px 0 0;
+    border-radius: 3px;
   }
-  .header__search-input:focus {
-    border-bottom-color: #FDDA36;
-    background: #FFFFFF;
+}
+.header .block {
+  display: block;
+}
+@media (min-width: 768px) {
+  .header .block {
+    background: rgba(255, 255, 255, 0.4);
+    border: 1px solid #7d7d7d;
     animation: inputin 1s;
+  }
+}
+.header .none {
+  display: block;
+}
+@media (min-width: 768px) {
+  .header .none {
+    display: none;
   }
 }
 @keyframes inputin {
@@ -544,13 +581,18 @@ template {
 }
 @keyframes inputout {
   0% {
-    width: 100%;
+    display: block;
   }
   100% {
-    width: 0;
+    display: none;
   }
 }
-.header__menu-list {
+@media (min-width: 768px) {
+  .header .no-search {
+    display: none;
+  }
+}
+.header__menu-list, .header__menu-list-no-search {
   list-style: none;
   font-size: 1em;
   display: flex;
@@ -560,16 +602,21 @@ template {
   justify-content: center;
 }
 @media (min-width: 768px) {
-  .header__menu-list {
+  .header__menu-list, .header__menu-list-no-search {
     flex-flow: row;
     width: 25rem;
-    margin-left: 1.5rem;
+    margin-left: 1.8rem;
     justify-content: space-between;
   }
 }
 @media (min-width: 992px) {
-  .header__menu-list {
-    margin-left: 2.5rem;
+  .header__menu-list, .header__menu-list-no-search {
+    margin-left: 2.6rem;
+  }
+}
+@media (min-width: 768px) {
+  .header__menu-list-no-search {
+    width: 15rem;
   }
 }
 .header__menu-item {
@@ -580,7 +627,9 @@ template {
 }
 @media (min-width: 768px) {
   .header__menu-item {
-    width: 8rem;
+    display: flex;
+    justify-content: flex-start;
+    width: 45%;
     font-size: 0.9rem;
   }
   .header__menu-item:first-child {
@@ -611,15 +660,12 @@ template {
 }
 @media (min-width: 768px) {
   .header__menu-link--entrar {
-    margin: 0 1rem;
-    background-color: rgba(253, 218, 54, 0.6);
-    padding: 10%;
-    width: 6.5rem;
+    background-color: #FDDA36;
     border-radius: 5px;
   }
   .header__menu-link--entrar:hover {
     border-bottom: none;
-    background-color: #FDDA36;
+    background-color: #fcd104;
   }
 }
 .header .active-link {
@@ -633,7 +679,6 @@ template {
     background-color: white;
     border: 2px solid #FDDA36;
     padding: 8%;
-    width: 6rem;
     border-radius: 5px;
   }
 }

@@ -1,4 +1,4 @@
-Ajeitar bug do input sumindo na responsividade (poderia ser criado quando clicasse no icone)
+Fazer o header fixo e transparente quando estiver no topo (input de vidro)
 Adicionar um sistema de fechar busca
 Decidir o que vai ter no banner - animação legal
 Parte preto translucida do menu bugada

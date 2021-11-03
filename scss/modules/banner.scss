@@ -11,7 +11,12 @@
 
     &__mask {
         background: rgba($black, .25);
-        padding: 8% 6%;
+        padding: 18vh 6% 12vh;
+
+        @include medium() {
+            background: rgba($black, .1);
+            padding: 25vh 6% 15vh;
+        }
     }
 
     &__title {

@@ -85,6 +85,7 @@ $ultra-large: 1400px;
     text-transform: uppercase;
     display: block;
     margin: .6rem 0;
+    transition: .3s ease;
 
     @include medium() {
         cursor: pointer;
