@@ -1,11 +1,7 @@
-Fazer o header fixo e transparente quando estiver no topo (input de vidro)
-Adicionar um sistema de fechar busca
 Decidir o que vai ter no banner - animação legal
 Parte preto translucida do menu bugada
 Criar micro interação para desktop (hover nos cards e links)
-Sistema de rolagem para cima
 Ajeitar o idioma do código
-Criar novas páginas externas (restaurar senha, termos de privacidade, sorteio)
+Desenvolver ultimas páginas do logoff
 Adicionar verificação de cookies (home e derivadas)
-Desenhar as páginas internas
 Adicionar filtros
