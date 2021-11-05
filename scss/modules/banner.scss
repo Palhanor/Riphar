@@ -1,24 +1,28 @@
+// Container no banner
 .banner {
-    //background: linear-gradient(295.68deg, $theme-red -11.63%, $theme-orange 62.37%, $theme-yellow 99.32%);
     background: radial-gradient(circle at -4% -12.9%, rgb(30, 33, 48) 0.3%, rgb(74, 98, 110) 90.2%);
     width: 100%;
 
+    // Background diferente na vestão desktop
     @include medium() {
     background: linear-gradient(217deg, rgba(255,0,0,.8), rgba(255,0,0,0) 70.71%),
             linear-gradient(127deg, rgba(0,255,0,.8), rgba(0,255,0,0) 70.71%),
             linear-gradient(336deg, rgba(0,0,255,.8), rgba(0,0,255,0) 70.71%);
     }
 
+    // Máscara que preenche e escurece o banner
     &__mask {
         background: rgba($black, .25);
         padding: 18vh 6% 12vh;
 
+        // Mudança no estilo da máscara na versão desktop
         @include medium() {
             background: rgba($black, .1);
             padding: 25vh 6% 15vh;
         }
     }
 
+    // Texto principal do banner
     &__title {
         font-family: 'Ubuntu', sans-serif;
         font-size: 2.3rem;
@@ -28,6 +32,7 @@
         margin-bottom: 2rem;
     }
 
+    // Texto secundário do banner
     &__text {
         font-family: 'Ubuntu', sans-serif;
         font-size: 1.1rem;
@@ -39,7 +44,9 @@
         width: 80%;
     }
 
+    // Botão do banner - MODIFICAR O NOME
     &__btn {
+        // Pega o estilo padrão do "presets"
         @extend %button-primary;
         font-family: 'Ubuntu', sans-serif;
         width: 70%;

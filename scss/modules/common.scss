@@ -1,3 +1,4 @@
+// Estilo base para a página
 * {
     margin: 0;
     padding: 0;
@@ -5,18 +6,22 @@
     font-family: 'Montserrat', sans-serif;
 }
 
+// Estilo padrão para inputs - pega do "preset"
 .input {
     @extend %input-field;
 }
 
+// Estilo padrão para links - pega do "preset"
 .link {
     @extend %links;
 }
 
+// Estilo padrão para icones - pega do "preset"
 .icon {
     @extend %icons;
 }
 
+// OUTROS ESTILOS PARA DESENVOLVER
 //botoes - btn, btn-primary, btn-secondary
 //container - container
 //titulos - def-title

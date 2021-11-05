@@ -1,32 +1,40 @@
+// MODIFICAR OS NOMES DAS CLASSES DESSE SETOR
+
+// Container da seção que exibe os cards dos sorteios
 .search {
     background: $page-bg;
     padding: 6%;
 
+    // Alteração na versão de desktop grande
     @include large() {
         padding-top: 3%;
     }
 
+    // Texto principal
     &__title {
         text-align: center;
         font-weight: 500;
         margin-bottom: 1.5rem;
     }
 
+    // Texto secundário
     &__text {
         margin-bottom: 2.5rem;
         text-align: center;
         line-height: 1.2;
     }
 
+    // Campo que engoba os cards dos sorteios
     .results {
-        //nothing
         
+        // Estrutura da listagem dos cards
         &__list {
             list-style: none;
             display: flex;
             flex-direction: column;
             margin-bottom: 1rem;
 
+            // Ajuste na listagem nas versões de tablet para cima
             @include small() {
                 flex-direction: row;
                 flex-wrap: wrap;
@@ -34,6 +42,7 @@
             }
         }
 
+        // Container do card de sorteio
         &__list-item {
             width: 100%;
             height: auto;
@@ -42,23 +51,28 @@
             background: $white;
             border-radius: 5px;
 
+            // Alteração de tamanho na versão tablet
             @include small() {
                 width: 48%;
             }
-
+            
+            // Alteração de tamanho na versão desktop grande
             @include large() {
                 width: 32%;
             }
-
+            
+            // Alteração de tamanho na versão desktop muito grande
             @include extra-large() {
                 width: 24%;
             }
         }
 
+        // Container de link que engloba todo o container do card
         &__item-link {
             text-decoration: none;
         }
 
+        // Imagem do sorteio
         &__item-image {
             width: 100%;
             height: 10rem;
@@ -66,11 +80,13 @@
             object-fit: cover;
         }
 
+        // Campo de descrição do sorteio
         &__item-description {
             padding: 3% 4%;
             color: $black;
         }
 
+        // Parte superior da descrição do sorteio
         &__item-description-head {
             @extend %item-description;
             font-weight: 500;
@@ -85,6 +101,7 @@
             }
         }
 
+        // Parte inferior da descrição do sorteio
         &__item-description-body {
             @extend %item-description;
             color: $darker-medium-gray;
@@ -99,29 +116,27 @@
             }
         }
 
+        // Tituo do sorteio
         &__item-title {
             max-width: 80%;
         }
 
-        
-        //&__item-price {
-        //    useless
-        //}
+        //&__item-price { }
 
-        //&__item-author {
-        //    useless
-        //}
+        //&__item-author { }
 
-        //&__item-expiration {
-        //    useless
-        //}
+        //&__item-expiration { }
     }
 
+    // Botão para carregar mais sorteios
     &__btn {
+        // Importa o estilo padrão do presets
         @extend %button-primary;
         width: 70%;
         max-width: 360px;
         margin: auto;
     }
+
+    // CRIAR UM NOVO ESTILO PARA O BOTÃO QUANDO NÃO HÁ MAIS SORTEIOS
 
 }

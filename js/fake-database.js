@@ -1,3 +1,5 @@
+
+// Banco de dados contendo os usuários
 var users = [
     {
         username: "Lucas Palhano Fonseca",
@@ -6,6 +8,7 @@ var users = [
     }
 ];
 
+// Banco de dados contendo os sorteios
 var sorteios = [
     {
         id: 0,

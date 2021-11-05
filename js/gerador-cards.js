@@ -1,6 +1,8 @@
+// Variáveis globais
 var list = document.querySelector(".results__list");
 var moreCards = document.querySelector(".search__btn");
 
+// Sistema que gera um certo número de cards de forma dinâmica
 var numCards = 12;
 var cardIndex = 0;
 var cardStop = numCards;
@@ -18,6 +20,7 @@ function createCards() {
     cardStop = cardStop + numCards;
 }
 
+// Sistema que gera os cards do sorteio de forma individual
 function newCard(sorteio) {
     var item = document.createElement("li");
     var itemLink = document.createElement("a");

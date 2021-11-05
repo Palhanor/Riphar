@@ -1,3 +1,6 @@
+// AJEITAR OS PADRÕES DE CORES
+// CRIAR OS PADRÕES DE TAMANHO
+// CRIAR NOVOS PADRÕES DE ELEMENTOS
 
 /// COLORS
 $black: #000000;
@@ -46,6 +49,7 @@ $ultra-large: 1400px;
 }
 
 /// PLACEHOLDERS
+// Estilo comum para icones
 %icons {
     font-size: 2rem;
     font-weight: 900;
@@ -56,11 +60,13 @@ $ultra-large: 1400px;
     }
 }
 
+// Estilo comum para links
 %links {
     color: $darker-medium-gray;
     text-decoration: underline;
 }
 
+// Estilo comum para campos de input
 %input-field {
     background: $medium-gray;
     color: $dark-gray;
@@ -76,6 +82,7 @@ $ultra-large: 1400px;
     }
 }
 
+// Estilo comum para botões de CTA
 %button-primary {
     padding: .9rem;
     background-color: $theme-red;
@@ -96,6 +103,7 @@ $ultra-large: 1400px;
     }
 }
 
+// Estilo comum para botões secundários
 %button-secondary {
     background-color: $white;
     color: $black;
@@ -111,6 +119,7 @@ $ultra-large: 1400px;
     }
 }
 
+// Estilo comum para as informações dos cards - DESENVOLVER
 %item-description {
     display: flex;
     justify-content: space-between;

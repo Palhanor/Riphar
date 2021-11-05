@@ -1,21 +1,26 @@
+// Corpo da página "Cadastre-se" - CRIAR UM ESTILO PADRÃO & MODIFICAR O NOME DA CLASSE
 .criar-conta {
     background: radial-gradient(circle at 18.7% 37.8%, rgb(250, 250, 250) 0%, rgba(225, 234, 238, 0.4) 90%);
     padding: 15% 5%;
     min-height: 88vh;
 
+    // Ajuste na página na versão tablet
     @include small() {
         padding: 8% 5%;
     }
 
+    // Ajuste na página na versão desktop  
     @include medium() {
         padding: 5%;
         min-height: 78vh;
     }
 
+    // Ajuste na página na versão desktop grande
     @include large() {
         min-height: 80vh;
     }
 
+    // Container que engloba o formulário na versão desktop
     &__container {
 
         @include medium() {
@@ -28,6 +33,7 @@
         }
     }
 
+    // Texto principal da página
     &__title {
         font-weight: 500;
         text-align: center;
@@ -35,6 +41,7 @@
         margin-bottom: 2rem;
     }
 
+    // Campo de formulário
     &__form {
         width: 80%;
         margin: 0 auto;
@@ -42,30 +49,30 @@
         flex-direction: column;
     }
 
-    //&__label {
-    //    useless
-    //}
-
-    &__input {
-        width: 100%;
-    }
-
-    &__termos {
-        margin: .5rem 0 1.5rem;
-    }
-
+    // Texto de suporte para os inputs - APAGAR (ENTRAR)
     &__label {
         font-size: .9rem;
     }
 
-    //&__link-termos {
-    //    useless
-    //}
+    // Inputs de texto para cadastro - APAGAR (ENTRAR)
+    &__input {
+        width: 100%;
+    }
 
+    // Texto do campo de termos de uso
+    &__termos {
+        margin: .5rem 0 1.5rem;
+    }
+    
+    //&__link-termos { }
+    
+    // Botão principal para realizar cadastro
     &__cta {
+        // Importa o estilo padrão dos presets
         @extend %button-primary;
     }
 
+    // Texto com link para a página entrar.html na versão desktop
     &__entrar {
         display: none;
 
@@ -76,11 +83,11 @@
         }
     }
 
-    //&__entrar-link {
+    //&__entrar-link { }
 
-    //}
-
+    // Botão secundário que redireciona para a página entrar.html na versão mobile
     &__secondary {
+        // Importa o estilo padrão dos presets
         @extend %button-secondary;
 
         @include medium() {
