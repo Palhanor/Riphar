@@ -1,0 +1,26 @@
+// Container do rodapé
+.footer {
+    background: $dark-blue;
+    color: $white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: .9rem;
+    height: 10vh;
+}
+
+// Container do rodapé aplicado à determinadas áreas da páginas (entrar, cadastro...)
+.special-footer {
+    display: none;
+
+    @include medium() {
+        //@extend .footer;
+        background: $dark-blue;
+        color: $white;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        font-size: .9rem;
+        height: 10vh;
+    }
+}

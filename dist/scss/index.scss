@@ -1,0 +1,15 @@
+/// sass --watch scss/index.scss:css/index/index.css
+
+@import 'modules/presets';
+
+@import 'modules/normalize';
+
+@import 'modules/common';
+
+@import 'modules/header';
+
+@import 'modules/banner';
+
+@import 'modules/search';
+
+@import 'modules/footer';

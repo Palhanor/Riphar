@@ -1,0 +1,13 @@
+/// sass --watch scss/cadastro.scss:css/cadastro/cadastro.css   
+
+@import 'modules/presets';
+
+@import 'modules/normalize';
+
+@import 'modules/common';
+
+@import 'modules/header';
+
+@import 'modules/cadastro';
+
+@import 'modules/footer';

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/entrar.min.css"/>
+    <link rel="icon" type="image/x-icon" href="assets/img/ticket.png">
+    <!-- Externo --> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kumar+One&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <title>Entrar - Realize e participe de sorteios online</title>
+</head>
+<body>
+    <header>
+        <nav class="header header-not-index-color header-not-index-position">
+            <a class="header__logo" href="index.html">
+                <img class="header__icon" src="assets/img/ticket.png" alt="">
+                <span class="header__name">Riphar</span>
+            </a>
+            <div class="header__navigation">
+                <i class="fas fa-bars icon header__open-menu"></i>
+                <div class="header__navigation-menu">
+                    <div class="header__menu-head">
+                        <a class="header__logo" href="index.html">
+                            <img class="header__icon" src="assets/img/ticket.png" alt="">
+                            <span class="header__name">Riphar</span>
+                        </a>
+                        <i class="fas fa-times icon header__close-menu"></i>
+                    </div>
+                    <div class="header__search no-search">
+                        <i class="fas fa-search icon header__search-icon no-search"></i>
+                        <input type="search" name="search" id="search" placeholder="Buscar..." class="header__search-input">
+                    </div>
+                    <ul class="header__menu-list-no-search">
+                        <li class="header__menu-item"><a href="index.html" class="header__menu-link">Início</a></li>
+                        <li class="header__menu-item"><a href="entrar.html" class="header__menu-link--entrar active-entrar">Entrar</a></li>
+                        <li class="header__menu-item"><a href="cadastro.html" class="header__menu-link">Cadastre-se</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="entrar">
+        <section class="entrar__container">
+            <h1 class="entrar__title">Entrar</h1>
+            <form action="post" class="entrar__form">
+                <label for="email" class="entrar__label">Endereço de e-mail</label>
+                <input type="email" class="input entrar__input" placeholder="username@example.com" id="email">
+                <label for="senha" class="entrar__label">Senha</label>
+                <input type="password" class="input entrar__input" placeholder="*********" id="senha">
+                <a href="nova-senha.html" class="link entrar__nova-senha">Esqueceu sua senha?</a>
+                <button type="button" class="entrar__cta">Entrar</button>
+                <span class="entrar__cadastro">Ainda não possui uma conta? <a href="cadastro.html" class="entrar__cadastro-link link">Cadastre-se</a></span>
+                <button type="button" class="entrar__secondary" onclick="window.location.replace('cadastro.html');">Criar conta</button>
+            </form>
+        </section>
+    </main>
+
+    <footer class="special-footer">
+        © Riphar - Todos os direitos reservado
+    </footer>
+
+    <script src="js/entrar.min.js"></script>
+    <!-- Externo -->
+    <script src="https://kit.fontawesome.com/e47ec628f8.js" crossorigin="anonymous"></script>
+
+</body>
+</html>

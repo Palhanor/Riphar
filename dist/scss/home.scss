@@ -1,0 +1,11 @@
+/// sass --watch scss/home.scss:css/home/home.css
+
+@import 'modules/presets';
+
+@import 'modules/normalize';
+
+@import 'modules/common';
+
+@import 'modules/header';
+
+@import 'modules/footer';

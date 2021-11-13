@@ -17,6 +17,14 @@
   },
   "homepage": "https://github.com/Palhanor/Riphar#readme",
   "devDependencies": {
-    "gulp": "^4.0.2"
+    "browser-sync": "^2.27.7",
+    "gulp": "^4.0.2",
+    "gulp-clean": "^0.4.0",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-htmlmin": "^5.0.1",
+    "gulp-sass": "^5.0.0",
+    "gulp-uglify": "^3.0.2",
+    "gulp-usemin": "^0.3.30",
+    "sass": "^1.43.4"
   }
 }
